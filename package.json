@@ -1,0 +1,23 @@
+{
+  "name": "practica2_websemantica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SyTWFE/practica2_websemantica.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SyTWFE/practica2_websemantica/issues"
+  },
+  "homepage": "https://github.com/SyTWFE/practica2_websemantica#readme",
+  "devDependencies": {
+    "mime": "^2.4.6",
+    "sparqljs": "^3.1.1"
+  }
+}
