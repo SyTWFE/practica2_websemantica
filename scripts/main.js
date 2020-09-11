@@ -63,22 +63,31 @@ function iterarJson(value){
 function mostrarResultados(){
 	var div = document.getElementById("resultados");
 	div.innerHTML="";
+	div.className="maincontainer"
 	for(var i=1; i<cantidad; i++){
-		var personElement = document.createElement("p");
+		var divElement = document.createElement("div");
+		divElement.className="container";
+
+		var personElement = document.createElement("a");
+		personElement.setAttribute('href',resultados[i].persona);
+		personElement.className="persona";
 		var textPersonElement = document.createTextNode(""+resultados[i].persona);
 		personElement.appendChild(textPersonElement);
 
 		var personaLabelElement = document.createElement("p");
 		var textPersonaLabelElement = document.createTextNode(""+resultados[i].personaLabel);
+		personaLabelElement.className="labelPersona";
 		personaLabelElement.appendChild(textPersonaLabelElement);
 
 		var birthLabelElement = document.createElement("p");
 		var textBirthLabelElement = document.createTextNode(""+resultados[i].birthLabel);
+		birthLabelElement.className="nacimiento"
 		birthLabelElement.appendChild(textBirthLabelElement);
 
-		div.appendChild(personElement);
-		div.appendChild(personaLabelElement);
-		div.appendChild(birthLabelElement);
+		divElement.appendChild(personElement);
+		divElement.appendChild(personaLabelElement);
+		divElement.appendChild(birthLabelElement);
+		div.appendChild(divElement);
 	}
 }
 

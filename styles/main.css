@@ -1,18 +1,26 @@
 html {
-  color: #333;
-  font-size: 1em;
-  line-height: 1.4;
+    color: #333;
+    font-size: 1em;
+    line-height: 1.4;
 }
 
 img,
 object {
-  max-width: 100%;
+    max-width: 100%;
 }
 
-
-
-
-
+.container{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fafafa;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    /* IMPORTANTE */
+    text-align: center;
+}
 
 
 

@@ -7,16 +7,18 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles/main.css">
+
   <!-- Compiled and minified CSS -->
 </head>
 
 <body>
 
-  <div class="container">
+  <div class="wrapper">
     <div>
       <nav>
         <div class="nav-wrapper">
-          <a class="brand-logo center">Información de graduados de la ULL y...
+          <h1 class="brand-logo center">Información de graduados de la ULL</h1>
         </div>
       </nav>
     </div>
@@ -24,12 +26,11 @@
     <div class="input-field col s12">
       <select name="select" id="select">
         <option id="option" disabled selected>Seleccionar</option>
-        <option id="place" value="birth">Lugar de nacimiento</option>
-        <option id="ocup" value="occup">Ocupación</option>
+        <option id="place" value="birth">Politicos y lugar de nacimiento</option>
       </select>
     </div>
 
-    <button class="btn waves-effect waves-light" type="submit" onclick=mostrarResultados() name="action">Search
+    <button class="btn waves-effect waves-light" type="submit" onclick=mostrarResultados() name="action">Buscar
     </button>
   </div>
 
